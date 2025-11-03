@@ -1,0 +1,10 @@
+ .hide-mobile{
+    display:none;
+ }
+ 
+ 
+ body {background: color #fffbf3;
+    margin: 0%;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.wrap{margin: 2em;}
