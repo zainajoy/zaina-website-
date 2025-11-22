@@ -3,58 +3,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kitty food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrap">
       <header>
-        <div class="header -left">
+        <div class="header-left">
           <a href="index.html">
             <img src="logo.svg" alt="the logo" />
-            <div class="divider hide-mobile"></div>
-            <a href="#" class="home hide-mobile">Home</a>
           </a>
+          <div class="divider hide-mobile"></div>
+          <a href="#" class="home hide-mobile">Home</a>
         </div>
         <nav>
           <a href="#" class="menu-open hide-desktop">
             <img src="menu.svg" width="20" height="15" alt="open menu" />
           </a>
           <ul>
-            <li>
+            <li class="hide-desktop">
               <a href="#" class="menu-close">
                 <img src="close.svg" width="20" height="15" alt="close menu" />
               </a>
+            </li>
             <li><a href="#">our food </a></li>
             <li><a href="#">our ingridients </a></li>
             <li><a href="#">our studies </a></li>
             <li><a href="#">our faq </a></li>
-            </li>
           </ul>
         </nav>
       </header>
       <main>
         <h1>
-          your cat will go
-          <img src="bonkers.svg" alt="text that says bonkers" /> bonkers
+          your cat will go <span class="bonkers">bonkers</span>
         </h1>
         <p class="subhead">
           .for the world best testing cat food, sourced with only the finest
           ingrideints . made with love from the heart of missipi
         </p>
-        <a href="#" class="primary _cta">Get Bonkers</a>
+        <a href="#" class="primary-cta">Get Bonkers</a> 
       </main>
       <div class="cat container">
         <div class="cat">
           <img
             src="cat image.jpg"
             width="500"
-            height="550"
-            alt="illustration"
+            height="450"
+            alt="illustration of a cat looking happy"
           />
-          <div class="inner circle"></div>
-          <div class="outer circle"></div>
+          <div class="innercircle"></div>
+          <div class="outercircle"></div>
         </div>
       </div>
     </div>
+    <script>
+       const menu=document.querySelector("nav ul");
+       const menuBtnOpen=document.querySelector(".menu-open");
+       const menuBtnClose=document.querySelector(".menu-close");
+        menuBtnOpen.addEventListener("click",()=>{
+          menu.classList.add("open");
+        });
+        menuBtnClose.addEventListener("click",()=>{
+          menu.classList.remove("open");
+        });
+
+    </script>
   </body>
 </html>
