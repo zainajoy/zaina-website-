@@ -7,4 +7,22 @@
     margin: 0%;
 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.wrap{margin: 2em;}
+.wrap{
+   margin: 2em;}
+   header{display: flex;
+      justify-content: space-between ;
+   }
+   nav ul {background: white;
+   position:fixed ;
+z-index: 999;
+top: 0;
+left: 0;
+height:100vh;
+margin: 0;
+list-style: none;
+width: 40%;; 
+text-align:right;
+padding: 2em;
+
+li{ margin: 1em 0;}
+}
